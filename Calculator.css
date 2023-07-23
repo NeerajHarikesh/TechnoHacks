@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    border-top: 3px solid red;
+    border-right: 3px solid blue;
+    border-bottom:3px solid red;
+    border-left: 3px solid blue;
+    box-shadow: 12px 12px 5px grey;
+    margin: 120px 0px 0px 510px;
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1611125832047-1d7ad1e8e48f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+background-repeat: no-repeat;
+width: 500px;
+height: 500px;
+background-size: cover;
+}
+.container h1{
+    font-size: 20px;
+    margin: 20px 0px 0px 20px;
+    color:brown;
+   
+}
+.container  #res{
+    margin: -30px 0px 0px 100px;
+    width: 250px;
+    height: 30px;
+    position: absolute;
+    font-size: 20px;
+
+}
+.container  #res:hover{
+    border: 2px solid brown;
+
+}
+
+.hr{
+    margin-top: 15px;
+    border: 3px solid red;
+}
+
+.number{
+ margin-top: 60px;
+margin-left: 40px;
+display: flex;
+flex-wrap: wrap;
+grid-column-gap:30px;
+
+
+}
+.number .num-row1{
+border: 1px solid black;
+ border-radius: 50%;
+ width: 50px;
+ height: 30px;
+ text-align: center;
+ font-size: 20px;
+ background-color:beige;
+ color:red;
+}
+.number .num-row1:hover{
+    background-color: aquamarine;
+}
+.number .num-row2{
+    border: 1px solid black;
+     border-radius: 50%;
+     width: 50px;
+     height: 30px;
+     text-align: center;
+     font-size: 20px;
+     background-color:beige;
+     color:red;
+     margin-top: -200px;
+    
+    }
+    .number .num-row2:hover{
+        background-color: aquamarine;
+    }
+
+.number .operator{
+    width: 60px;
+    height: 270px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 5px 0px 0px 20px;
+    background-color: bisque;
+
+  
+  
+}
+.number .operator .oper{
+ width: 30px;
+ height: 40px;
+ border-radius: 50%;
+ display: block;
+ font-size: 20px;
+ margin-left: 10px;
+ margin-top: 10px;
+ color:red;
+ background-color:beige;
+ 
+ 
+ }
+ .number .operator .oper:hover{
+    background-color: aquamarine;
+ }
+ .number  .num-row3,.num-row4{
+    border: 1px solid black;
+     border-radius: 50%;
+     width: 50px;
+     height: 30px;
+     text-align: center;
+     font-size: 20px;
+     background-color:beige;
+     color:red;
+     margin-top: -120px;
+     display: grid;
+     grid-column-gap:10px;
+    }
+    .number  .num-row3:hover{
+        background-color: aquamarine;
+    }  
+    .number  .num-row4:hover{
+        background-color: aquamarine;
+    } 
+
+
+    /* Media Queries */
+    /* iPad Mini */
+     @media screen and (max-width:768px),
+    screen and (max-height:1024){
+        .container{
+            float: right;
+             margin: 50px 200px 0px 0px;
+             width: 480px;
+             height: 450px;
+             
+        }
+        
+    } 
+    

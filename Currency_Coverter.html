@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Currency_Coverter.css">
+    <script defer src="currenc_coverter.js"></script>
+   <title>Currency Coverter App</title>
+   
+</head>
+<body>
+   
+    <div class="container">
+        <div class="log">
+            <img src="https://media.istockphoto.com/id/1265045422/photo/a-sack-of-u-s-dollar-bills-and-money-on-a-white-background.jpg?s=612x612&w=0&k=20&c=-7XLhStWYBCjPaoBK501bP8KErWyFmBNnzGG7EvD9t8=" alt="money img">
+        </div>
+        <div class="heading">
+            <h1> C<br>u<br>r<br>r<br>e<br>n<br>c<br>y<br><br>
+         <br>C<br>o<br>v<br>e<br>r<br>t<br>e<br>r </h1>
+        </div>
+       <p>Choose the Currency and the amount to get the exchange rate</p>
+       <label>Enter your amount:</label>
+       <input type="number" id="amount" placeholder="0" autofocus="">
+   
+        <h1>From:</h1>
+          <div class="currency">
+            <select id="currency-one">
+              <option value="USD" selected>United State Dollars(USD)</option>
+              <option value="EUR">Euro(EUR)</option>
+              <option value="GBP">United kingdom Pounds(GBP)</option>
+              <option value="AUD">Australia Dollars(AUD)</option>
+              <option value="ATS"> Australia Schillings(ATS)</option>
+              <option value="CAD">Canada Dollars(CAD)</option>
+              <option value="HKD">Hong Kong Dollars(HKD)</option>
+              <option value="HUF">Hungary Forint(HUF)</option>
+              <option value="ISK">Iceland Krona(ISK)</option>
+              <option value="INR">India Rupees(INR)</option>
+              <option value="IDR">Indonesia Rupiah(IDR)</option>
+              <option value="IEP">Ireland Punt(IEP)</option>
+              <option value="ILS">Israel New Shekels(ILS)</option>
+              <option value="KRW">Korea (South) Won(KRW)</option>
+              <option value="NZD">New Zealand Dollars(NZD)</option>
+              <option value="NOK">Norway Kroner(NOK)</option>
+              <option value="PKR"> Pakistani Rupee(PKR)</option>
+              <option value="SGD">Singapore Dollars(SGD)</option>
+              <option value="ZAR">South Africa Rand(ZAR)</option>
+              <option value="KRW">South Korea Won(KRW)</option>
+              <option value="XPT">Platinum Ounce(XPT)</option>
+        </select>
+       </div>
+        
+       <h1 style="margin: -28px 0px 0px 370px;">To:</h1>
+        <div class="currency">
+          <select id="currency-two" style="margin: -4px 0px 0px 340px;">
+            <option value="USD">United State Dollars(USD)</option>
+            <option value="EUR">Euro(EUR)</option>
+            <option value="GBP">United kingdom Pounds(GBP)</option>
+            <option value="AUD">Australia Dollars(AUD)</option>
+            <option value="ATS"> Australia Schillings(ATS)</option>
+            <option value="CAD">Canada Dollars(CAD)</option>
+            <option value="HKD">Hong Kong Dollars(HKD)</option>
+            <option value="HUF">Hungary Forint(HUF)</option>
+            <option value="ISK">Iceland Krona(ISK)</option>
+            <option value="INR" selected>India Rupees(INR)</option>
+            <option value="IDR">Indonesia Rupiah(IDR)</option>
+            <option value="IEP">Ireland Punt(IEP)</option>
+            <option value="ILS">Israel New Shekels(ILS)</option>
+            <option value="KRW">Korea (South) Won(KRW)</option>
+            <option value="NZD">New Zealand Dollars(NZD)</option>
+            <option value="NOK">Norway Kroner(NOK)</option>
+            <option value="PKR"> Pakistani Rupee(PKR)</option>
+            <option value="SGD">Singapore Dollars(SGD)</option>
+            <option value="ZAR">South Africa Rand(ZAR)</option>
+            <option value="KRW">South Korea Won(KRW)</option>
+            <option value="XPT">Platinum Ounce(XPT)</option>
+         </select>
+        
+        <button onclick="ConvertNow()" id="convert">Convert Now</button>
+        <h3 id="resultDisplay"></h3>
+        </div>
+        <h2 style=" float: right; margin:-20px 25px 0px 0px;font-size: 20px;color: brown; text-decoration: underline;" >&copy;Neeraj</h2>
+    </div>
+  </body>
+
+</html>

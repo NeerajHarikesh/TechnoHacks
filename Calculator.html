@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="Calculator.js"></script>
+    <title>Calculator </title>
+</head>
+<body>
+    <div class="container">
+     <h1>Result:- </h1><input type="text" name="result" id="res" readonly=""><hr class="hr">
+
+    <div class="number">
+        <button class="num-row1" value="1" onclick="display('1')">1</button>
+        <button class="num-row1" value="2" onclick="display('2')">2</button>
+        <button class="num-row1" value="3" onclick="display('3')">3</button>
+        <button class="num-row1" value="4" onclick="display('4')">4</button>
+        <div class="operator">
+          
+            <button class="oper" value="+" onclick="display('+')" >+</button>
+            <button class="oper"value="-" onclick="display('-')" >-</button>
+            <button class="oper"value="*" onclick="display('*')">X</button>
+            <button class="oper"value="/" onclick="display('/')" >/</button>
+            <button class="oper"value="%" onclick="display('%')">%</button>
+             
+      
+        </div>
+      
+        <button class="num-row2" value="5" onclick="display('5')">5</button>
+        <button class="num-row2" value="6" onclick="display('6')">6</button>
+        <button class="num-row2" value="7" onclick="display('7')">7</button>
+        <button class="num-row2" value="8" onclick="display('8')">8</button>
+      <hr><hr><hr>
+        <button  id="left1" class="num-row3" value="(" onclick="display('(')">(</button>
+        <button  id="left2" class="num-row3" value=")" onclick="display(')')">)</button>
+        <button class="num-row4" value="9" onclick="display('9')">9</button>
+        <button class="num-row3" value="0" onclick="display('0')">0</button>
+      <hr><hr><hr>
+
+      <button class="num-row4" value="." onclick="display('.')" id="fullstop" style="margin-top: -40px;">.</button>
+     <button class="num-row4" style=" margin-top: -40px;" onclick="calculate()"value="=" onclick="display('=')" id="equal">=</button>
+      
+        <button class="num-row4" style=" margin-top: -40px; font-size: 25px;" onclick=" clearScreen()" value="C" onclick="display('C')">C</button>
+     
+        
+
+    </div>
+    </div>
+
+
+</body>
+</html>
